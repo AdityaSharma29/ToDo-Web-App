@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div class="logo"><img src="/images/back8.jpg" alt="alt text"></div>
+        
+        <div id="login-page">
+            <h1 style="color: white;text-align: center;">-----  Sign Up -----</h1>
+
+            <div id="form-container">
+                <form method="POST" action="/add-user">
+                    <label for="username">Username</label>
+                    <input name="username" id="username" type="text" placeholder="Enter your Username" required>
+                    <label for="password">Password</label>
+                    <input name="password" id="password" type="text" placeholder="Enter your Password" required><br><br>
+                    <input type="submit" style="width: 110px;position: absolute;right: 30px;bottom: 15px;">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+/* 
+    https://colorhunt.co/palette/152965
+    
+    https://colorhunt.co/palette/28905
+    https://colorhunt.co/palette/2763
+    https://colorhunt.co/palette/62193
+*/
+
+
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{ 
+    background-image: linear-gradient(black, black, #ff0000 ); height: 97vh;
+    color: white;
+    font-family: 'Lemonada', cursive;
+}
+a{ cursor: pointer; }
+.logo{ margin: 30px 40px; }
+.logo img{ 
+    width: 200px;
+    border-radius: 10px 0px 10px 0px;
+}
+#links-cont{
+    margin: 0px 40px 30px 40px;
+    background-color:#252525;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#links-cont a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+#demo-cont{ margin-left: 15vw; }
+#demo-cont img{ 
+    width: 70vw; 
+    border-radius: 40px 0px 40px 0px;
+    box-shadow: 15px 20px 25px black;
+}
+
+
+/*********************************************************************************************************/
+
+
+#form-container{
+    border-radius: 40px 0px 40px 0px;
+    margin: 20px 10vw;
+    background-color: #252525;  
+    box-shadow: 10px 10px 25px black;
+    position: relative;
+}
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin: 10px 0px;
+    font-family: 'Lemonada', cursive;
+}
+
+
+/*********************************************************************************************************/
+
+
+#todo-cont{
+    height: 400px;
+    width: 40vw;
+    margin: 0 30vw;
+    padding: 20px;
+    text-align: center;
+    background-color: #252525;
+    border-radius: 30px;
+    border-radius: 40px 0px 40px 0px;
+    box-shadow: 10px 10px 25px black;
+}
+
+
+
+.id{ width: 10%; border:2px solid black;}
+.task{ width: 61%; border:2px solid black;}
+.action{ width: 40%; border:2px solid black;}
+
+th,td{
+    padding: 5px;
+    background-color: #141414;
+}
+
+.edit-btn{
+    background-color: orange;
+    padding: 0px 10px;
+    font-family: 'Lemonada', cursive;
+}
+
+.del-btn{
+    background-color: red;
+    padding: 0px 10px;
+    font-family: 'Lemonada', cursive;
+}

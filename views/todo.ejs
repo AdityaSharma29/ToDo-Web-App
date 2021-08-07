@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <% var title; %>
+        <% var users; %>
+        <div class="logo"><img src="/images/back8.jpg" alt="alt text"></div>
+        
+        <div id="links-cont">
+            <div><a onclick="redirect()">LogOut</a></div>
+            <div><a href="#">Report Issue</a></div>
+        </div>
+
+        <div id="todo-cont">
+            <h2>Welcome <%= title %> !!</h2><br>
+            <div id="todo-enter-field">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="id">ID</th>
+                            <th class="task">TASK</th>
+                            <th class="action">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% users.forEach(function(user){%>
+                            <tr>
+                                <td><%= user.ID %>.</td>
+                                <td><i><%= user.TASK %></i></td>
+                                <td>
+                                    <a href="/edit/<%= user.ID %>"><button class="edit-btn">EDIT</button></a>
+                                    <a href="/delete/<%= user.ID %>"><button class="del-btn">DELETE</button></a>
+                                </td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+
+
+        <script>
+            function redirect(){
+                console.log("User Logged Out.");
+                location.replace("/");
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+<!--
+
+    
+    signup
+
+    signin
+
+    todo-page----------- C R U D
+
+    report issue
+
+    error page
+
+
+-->
